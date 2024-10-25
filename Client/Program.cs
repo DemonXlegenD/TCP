@@ -74,7 +74,8 @@ namespace Client
             Client client = new Client();
             client.Connect();
 
-            string message = "Hello from Client";
+            string message = Console.ReadLine();
+                
             client.SendMessage(message);
             Console.WriteLine("client has sent message " + message);
 
